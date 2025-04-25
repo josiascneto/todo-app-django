@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Tarefas{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'task_list' %}">Lista de Tarefas</a></h1>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
